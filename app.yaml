@@ -1,3 +1,4 @@
+service: div-service
 runtime: nodejs12
 instance_class: F1
 automatic_scaling:
