@@ -1,7 +1,7 @@
 let main = (factors) => {
     factors = factors.reduce((previous, current) => previous/current);
     factors = roundNumber(factors, decimalsNumber);
-    if (factors) {
+    if (!isNaN(factors)) {
         return {code:  httpOk, body: {result: factors}};
     } else {
         log.error('divisionController /','semantics errors were found');
